@@ -33,7 +33,7 @@ describe("ToDoLists test phase", () => {
     expect(all[0].completed).toBe(true);
   });
 
-  test("retrive all todos that are overdue", () => {
+  test("Retrieving overdue todo", () => {
     let ListTodos = overdue();
 
     expect(
@@ -43,7 +43,7 @@ describe("ToDoLists test phase", () => {
     ).toBe(true);
   });
 
-  test("retrive all todos that are dueToday", () => {
+  test("Retrieving dueToday todos", () => {
     let ListTodos = dueToday();
 
     expect(
@@ -53,7 +53,7 @@ describe("ToDoLists test phase", () => {
     ).toBe(true);
   });
 
-  test("retrive all todos that are dueLater", () => {
+  test("Retrieving dueLater todos", () => {
     let ListTodos = dueLater();
 
     expect(
